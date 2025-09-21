@@ -5,7 +5,6 @@ import { useRecoilValue } from "recoil";
 import { darkMode } from "../../atoms/atoms";
 import Button from "../../components/Button";
 import NumberInput from "../../components/NumberInput";
-import OutlineButton from "../../components/OutlineButton";
 import Text from "../../components/Text";
 import TextInput from "../../components/TextInput";
 import { FontVariants, TextVariants } from "../../shared/constants";

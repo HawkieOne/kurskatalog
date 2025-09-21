@@ -7,7 +7,6 @@ import { useRecoilState, useSetRecoilState } from "recoil";
 import { coursesBuilderState, hasStartedEditingState } from "../../atoms/atoms";
 import AppBar from "../../components/AppBar";
 import ConfirmationModal from "../../components/ConfirmationModal";
-import Footer from "../../components/Footer";
 import UploadModal from "../../components/UploadModal";
 import RectangleIconButton from "../../components/RectangleIconButton";
 import SquareIconButton from "../../components/SquareIconButton";

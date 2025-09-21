@@ -1,4 +1,3 @@
-import { BsPlusSquare } from "react-icons/bs";
 import Text from "../../components/Text";
 import {
   AlignVariants,
