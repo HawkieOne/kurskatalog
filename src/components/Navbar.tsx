@@ -3,7 +3,7 @@ import { BiExport } from "react-icons/bi";
 import { BsBook, BsInfoSquare } from "react-icons/bs";
 import { FiSettings } from "react-icons/fi";
 import { GoGraph } from "react-icons/go";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import {
   coursesDrawerState,

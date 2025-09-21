@@ -26,7 +26,6 @@ import {
 import Button from "../../components/Button";
 import ConfirmationModal from "../../components/ConfirmationModal";
 import Divider from "../../components/Divider";
-import RectangleIconButton from "../../components/RectangleIconButton";
 import UploadModal from "../../components/UploadModal";
 import {
   localStorageLayoutKey,
@@ -81,19 +80,18 @@ export default function ExamBuilder() {
     useState(false);
   const [isConfirmNewIdPlanModalOpen, setIsConfirmNewIdPlanModalOpen] =
     useState(false);
-  const [isConfirmRemovePresetsModalOpen, setIsConfirmRemovePresetsModalOpen] =
-    useState(false);
+  const isConfirmRemovePresetsModalOpen = false
   const isTutorialModalOpen = useRecoilValue(tutorialsModalOpenState);
   const [uploadedPreset, setUploadedPreset] = useState<Preset>();
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
   const [isCoursesDrawerOpen, setIsCoursesDrawerOpen] =
     useRecoilState(coursesDrawerState);
   const [courseToRemove, setCourseToRemove] = useRecoilState(removeCourseState);
-  const [isExportDrawerOpen, setIsExportDrawerOpen] =
+  const [isExportDrawerOpen] =
     useRecoilState(exportDrawerState);
-  const [isSettingsDrawerOpen, setIsSettingsDrawerOpen] =
+  const [isSettingsDrawerOpen] =
     useRecoilState(settingsDrawerState);
-  const [isStatisticDrawerOpen, setIsStatisticDrawerOpen] = useRecoilState(
+  const [isStatisticDrawerOpen] = useRecoilState(
     statisticsDrawerState
   );
   const [isFileSystemDrawerOpen, setIsFileSystemDrawerOpen] = useRecoilState(
@@ -114,10 +112,10 @@ export default function ExamBuilder() {
   const setActiveCustomCourseEdit = useSetRecoilState(
     activeCustomCourseEditState
   );
-  const [coursesLocalStorage, setCoursesLocalStorage] = useLocalStorage(
+  const setCoursesLocalStorage = useLocalStorage(
     localStorageLayoutKey,
     null
-  );
+  )[1];
 
   const [presetsLocalStorage, setPresetsLocalStorage] = useLocalStorage(
     localStorageUploadedPresetsKey,
