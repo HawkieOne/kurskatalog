@@ -3,7 +3,6 @@ import { useRecoilValue } from "recoil";
 import { darkMode } from "../atoms/atoms";
 import { TextVariants } from "../shared/constants";
 import Button from "./Button";
-import OutlineButton from "./OutlineButton";
 import Text from "./Text";
 
 interface ModalProps {

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 
 interface FilterProps {

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { darkMode, tutorialsModalOpenState } from "./atoms/atoms";
 import Navbar from "./components/Navbar";
 import ExamBuilder from "./pages/builder";
